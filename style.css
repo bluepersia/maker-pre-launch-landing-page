@@ -168,6 +168,7 @@ h4
     gap: 3.73em;
     padding: 0 6.4%;
     margin-bottom: 9.6em;
+    align-items: center;
 }
 
 .feature_icon-wrapper
@@ -205,6 +206,9 @@ h4
 
 .pricing_text {
     margin-bottom: 5.26em;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -223,7 +227,7 @@ h4
 }
 .pricing_modal {
     position: relative;
-    padding: 9% 2em;
+    padding: 3.2em 2em 2.1em;
     border-radius: 12px;
     max-width: 445px;
     margin-left: auto;
@@ -331,7 +335,8 @@ h4
 @media (min-width: 768px)
 {
     .header {
-        padding: 3.2em 5%;
+        padding: 3.2em 5% 0;
+        margin-bottom: 7.2em;
     }
     .logo {
         margin-left: 0;
@@ -357,6 +362,9 @@ h4
         padding: 0 12%;
         text-align: left;
         margin-bottom: 9.4em;
+        margin-left: auto;
+        margin-right: auto;
+
     }
     .feature_icon-wrapper {
         margin-left: 0;
@@ -364,16 +372,33 @@ h4
 
     .feature{
         max-width: 515px;
+        display: flex;
+        align-items: center;
+        gap: 10%;
     }
 
     .feature:nth-child(1), .feature:nth-child(3)
     {
-        margin-left: 3.8em;
+        margin-left: 3.88em;
+    }
+
+    .feature:nth-child(2), .feature:nth-child(4)
+    {
+        margin-right: 3.88em;
     }
    
     .pricing {
         padding: 0 12%;
         margin-bottom: 8em;
+    }
+
+
+    .pricing_modal {
+        padding: 3.26em 2.5em 3.2em;
+    }
+
+    .pricing_modal-2 {
+        padding-top: 4em;
     }
 
     .form {
@@ -384,7 +409,7 @@ h4
         margin-right: auto;
     }
 
-    .fomr_textfield-wrapper{
+    .form_textfield-wrapper{
         width: 67%;
     }
 
@@ -392,4 +417,117 @@ h4
     {
         width: 29.4%;
     }
+}
+
+
+
+@media(min-width: 1440px)
+{
+
+    h1 
+    {
+        font-size: 3.2rem;
+        line-height: 1.16;
+    }
+
+    h2 
+    {
+        font-size: 2.66rem;
+        line-height: auto;
+    }
+
+    h3 
+    {
+        font-size: 2.13rem;
+        line-height: auto;
+    }
+
+    h4
+    {
+        font-size: 1.2rem;
+        line-height: auto;
+    }
+
+
+    .header {
+        padding: 5.4em 11.4% 0;
+        margin-bottom: 13em;
+    }
+    .hero {
+        padding: 5.8em 24% 4.2em;
+        background-image: url(./assets/illustration-hero-left.svg), url(./assets/bg-hero-squiggle.svg), url(./assets/illustration-hero-right.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center left, top center, center right;
+    }
+
+    .title {
+        margin-bottom: .5em;
+    }
+    .hero_body {
+        margin-bottom: 4.26em;
+    }
+
+
+    .features {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
+        margin-bottom: 13em;
+    }
+
+    .feature {
+       flex: 1 1 255px;
+       margin-left: auto;
+       margin-right: auto;
+       flex-direction: column;
+    }
+    .feature:nth-child(1), .feature:nth-child(3)
+    {
+        margin-left: auto;
+    }
+
+    .feature:nth-child(2), .feature:nth-child(4)
+    {
+        margin-right: auto;
+        margin-top: 3.2em;
+    }
+
+    .pricing 
+    {
+        margin-bottom: 10em;
+    }
+
+    .pricing_text{
+        margin-bottom: 4.8em;
+    }
+
+    .pricing_modals
+     {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2em;
+       align-items: center;
+     }
+
+    
+
+     .pricing_modal-1 {
+        margin-bottom: 0;
+        margin-right: 0;
+     }
+
+     .pricing_modal-2 {
+        padding-bottom: 4em;
+        margin-left: 0;
+     }
+
+
+     .footer {
+        background: url(./assets/bg-footer-squiggle.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 3.46em 11.4% 8.6em;
+     }
 }
