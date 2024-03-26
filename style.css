@@ -80,6 +80,7 @@ h4
     outline: solid 2px var(--color-1);
 }
 
+
 .textfield-wrapper.invalid .textfield {
     outline: solid 2px var(--color-6);
 }
@@ -91,6 +92,7 @@ h4
     font-size: 0.8rem;
     padding: 0 1.2em;
     display: none;
+    margin-top: .33em;
 }
 
 .textfield-wrapper.invalid .textfield_error {
@@ -106,12 +108,13 @@ h4
     font-size: inherit;
     font-family: inherit;
     border-radius: 2.5em;
-    transition: background-color 300ms, outline 300ms;
+    transition: background-color 300ms, outline 300ms, color 300ms;
 }
 
 .btn:hover, .btn:focus{
     background-color: transparent;
     outline: 2px solid var(--color-1);
+    color: var(--color-4);
 }
 
 
@@ -327,8 +330,9 @@ h4
 .form {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: start;
     gap: 1.6em;
+    text-align: left;
 }
 
 
